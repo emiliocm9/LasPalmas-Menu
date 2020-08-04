@@ -1,15 +1,15 @@
 <div class="container-fluid d-flex flex-column align-items-center">
 <p id="notice" class="text-uppercase"><%= notice %></p>
 
-<h3 class="text-info mt-3 mb-3">Este el nuevo menú</h3>
-<h5 class="text-success mb-5">This is the new menu</h5>
+<h3 class="text-info mt-3 mb-3 anchor">Este el nuevo menú</h3>
+<h5 class="text-success mb-5 anchor_a">This is the new menu</h5>
 
 <% if @user.avatar.attached? %>
   <img src="<%=(url_for(@user.avatar))%>">
 <% end %>
 
   <div class="mt-5 mb-5 text-center">
-    <%= link_to "CONFIRMAR MENÚ", logout_path, method: :delete, class:"text-info anchor" %><br>
+    <%= link_to "CONFIRMAR MENÚ", logout_path, method: :delete, class:"text-info anchor anchor_a" %><br>
     <%= link_to 'regresar y cambiar de menú', edit_user_path(@user), class:"text-danger anchor_a" %>
   </div>
 </div>

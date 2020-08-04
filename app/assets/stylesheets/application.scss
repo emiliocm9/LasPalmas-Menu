@@ -33,3 +33,18 @@
   text-transform: uppercase;
   font-weight: bold;
 }
+
+@media only screen and (min-width: 300px) and (max-width: 767px)  {
+  //Put your CSS here for 200px to 767px width devices (cover all mobile portrait width //
+  .anchor_b {
+    font-size: 33px;
+  }
+
+  .anchor_a {
+    font-size: 33px;
+  }
+
+  .anchor {
+    font-size: 60px;
+  }
+}
