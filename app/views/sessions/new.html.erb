@@ -1,0 +1,22 @@
+<div class="container w-25 mx-auto mt-5 d-flex flex-column align-items-center">
+<p id="alert"><%= alert %></p>
+
+<h3 class="text-uppercase text-info">Inicia sesión</h3>
+<h5 class="text-uppercase text-success">Sign In</h5>
+
+<%= form_tag sessions_path do |form| %>
+  <div class="field mb-3">
+    <%= label_tag :username %> <br>
+    <%= text_field_tag :username %>
+  </div>
+
+  <div class="field mt-3 mb-3">
+    <%= label_tag :password %> <br>
+    <%= password_field_tag :password %>
+  </div>
+
+  <div class="actions d-flex justify-content-center mt-3">
+    <%= submit_tag "Login" %>
+  </div>
+<% end %>
+</div>
