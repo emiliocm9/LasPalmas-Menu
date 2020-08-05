@@ -45,6 +45,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bcrypt', '~> 3.1', '>= 3.1.15'
 gem 'bootstrap', '~> 4.5'
 gem 'jquery-rails'
+gem 'aws-sdk-s3', '~> 1.0.0.rc2'
+gem "google-cloud-storage", "~> 1.8", require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
